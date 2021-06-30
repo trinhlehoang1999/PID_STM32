@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"final_pid\startup_stm32f103xe.o"
+"final_pid\main.o"
+"final_pid\gpio.o"
+"final_pid\tim.o"
+"final_pid\stm32f1xx_it.o"
+"final_pid\stm32f1xx_hal_msp.o"
+"final_pid\stm32f1xx_hal_gpio_ex.o"
+"final_pid\stm32f1xx_hal_tim.o"
+"final_pid\stm32f1xx_hal_tim_ex.o"
+"final_pid\stm32f1xx_hal.o"
+"final_pid\stm32f1xx_hal_rcc.o"
+"final_pid\stm32f1xx_hal_rcc_ex.o"
+"final_pid\stm32f1xx_hal_gpio.o"
+"final_pid\stm32f1xx_hal_dma.o"
+"final_pid\stm32f1xx_hal_cortex.o"
+"final_pid\stm32f1xx_hal_pwr.o"
+"final_pid\stm32f1xx_hal_flash.o"
+"final_pid\stm32f1xx_hal_flash_ex.o"
+"final_pid\stm32f1xx_hal_exti.o"
+"final_pid\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "final_pid\final_pid.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "final_pid.map" -o final_pid\final_pid.axf
